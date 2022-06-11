@@ -162,7 +162,10 @@ color: var(--hover-color);
 	align-items: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	
+	background-image: url(/images/hero-gb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero-title {
