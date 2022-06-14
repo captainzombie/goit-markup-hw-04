@@ -113,11 +113,10 @@ color: var(--hover-color);
 
 .contacts-icon {
 	margin-right: 10px;
+	fill: currentColor;
+
 }
 
-.contacts-icon:last-child {
-	margin-right: 0;
-}
 
 .contacts {
 	margin-left: auto;
@@ -135,6 +134,9 @@ color: var(--hover-color);
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 
@@ -174,7 +176,7 @@ color: var(--hover-color);
 	align-items: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-image:  url(/images/hero-gb.png);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-gb.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -235,6 +237,7 @@ color: var(--hover-color);
 
 .benefits-list {
 	display: flex;
+	
 }
 
 .benefits-item {
@@ -243,6 +246,28 @@ color: var(--hover-color);
 
 .benefits-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.benefits-icon-item {
+	display: flex;
+	width: 270px;
+	height: 120px;
+	background-color: #F5F4FA;
+	border-radius: 2%;
+	margin-left: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.benefits-icon-item:first-child {
+	margin-left: 0;
+}
+
+.benefits-icon-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
 /*---------team---------*/
@@ -395,7 +420,13 @@ color: var(--hover-color);
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
+	background-color: #2F303A;
 }
+
+.footer .container {
+	display: flex;
+}
+
 
 .address {
 	font-weight: 400;
@@ -407,14 +438,55 @@ color: var(--hover-color);
 		margin-top: 20px;
 }
 
-.footer {
-	background-color: #2F303A;
+.footer-social {
+	margin-left: 70px;
 }
 
 .footer-item {
 	margin-top: 9px;
-
 }
+
+.footer-icon-list {
+	display: flex;
+}	
+
+.footer-icon-item {
+	width: 44px;
+	height: 44px;
+	margin-left: 10px;
+}
+
+.footer-icon-item:first-child {
+	margin-left: 0;
+}
+
+.footer-icon-link {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-color: #44454E;
+	fill: #FFFFFF;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+		fill: #FFFFFF;
+		background-color: var(--hover-color);
+}
+
+.footer-soc-title {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
 
 /*---------portfolio-page---------*/
 
