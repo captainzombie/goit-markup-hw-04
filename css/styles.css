@@ -119,6 +119,7 @@ color: var(--hover-color);
 .contacts-icon {
 	margin-right: 10px;
 	fill: currentColor;
+	
 
 }
 
@@ -145,15 +146,15 @@ color: var(--hover-color);
 }
 
 .contacts-link-header {
+	display: flex;
 	color: #757575;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.02em;
-	justify-content: center;
+	justify-content: baseline;
 	align-items: center;
-
 }
 
 
